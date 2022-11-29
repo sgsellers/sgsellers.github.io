@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Sellers, Ellerman Bursts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/headshot1.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Sean G. Sellers</a></h1>
+					<p>Staring directly at the Sun,<br />
+					just like childhood authority figures told you not to!</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#two" class="active">Motivation</a></li>
+						<li><a href="#three">Data</a></li>
+						<li><a href="#four">Results</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="../images/pano.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h3>Small-Scale Low-Chromospheric Brightenings<br>and their Hard X-ray Origins</h3>
+									</header>
+									<p>A preliminary study of flare-associated chromospheric sources as the origin of HXR emission using the Dunn Solar Telescope (DST).</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Motivation</h3>
+									<p>The chromospheric Hα 6563Å line is known to be particularly sensitive to nonthermal processes (see papers Canfield et al. 1984; Canfield &amp Gayley 1987). Previous observations have shown that nonthermally driven quasi-periodic oscillations are present in the Hα line during flares (e.g., Wang et al. 2000, 2003; McAteer et al. 2005; Jackiewicz &amp Balasubramaniam 2013; Radziszewski et al. 2011). Particularly, the blue wing of Hα is sensitive to nonthermal energy processes without significant contamination from thermal processes or plasma motions. In a preliminary project by Sellers &amp McAteer, we attempt to study nonthermal features both in Hα, and in the Ca II 8542Å line, for which high-cadence observations are somewhat rarer. </p> 
+									<p>The goal of this project is to link the timing and oscillatory signatures of flare-like HXR signatures with corresponding bursts in the lower solar atmosphere, in order to reveal the fundamental locations of HXR energy deposition. To this end, we have created an algorithm based on the work of Vissers et al. 2013 (see the link to my github, right) to extract and track flare sources in the wings of Hα 6563Å and Ca II 8542Å. This page presents some preliminary results from the upcoming paper. For a slightly more organized discussion, my thesis is available <a href=../supplemental/Sellers_Sean_G_Dissertation_2022_10-1.pdf>here.</a></p>
+								</div>
+							</section>
+							<section id="three">
+								<div class="container">
+									<h3>Data</h3>
+									<p>We use data from the IBIS Fabry-Perot spectro-imager from three days during the DST Service Modes during 2013--2014. 2013-10-17 has fast cadence (0.4 s) Ca II 8542Å data with a coarse spectral sampling (3 positions). 2013-10-26 has medium cadence (1.8 s) Ca II 8542Å data with a standard spectral sampling (11 position). 2014-10-26 has mixed cadence Hα 6563Å data with coarse spectral sampling (3 positions). The below images and videos show the data, and wider context on the solar disk and in relation to GOES-flux throughout the observing period.</p>
+									<h4>2013-10-17</h4>
+									<iframe width=100% height = 80% src="https://youtube.com/embed/nqmMszm_e-Q" frameborder="0" allowfullscreen class="video"></iframe>
+									<img src="../images/ellerman/IBIS_overview1.png" alt="Data overview for 2013-10-17" width=100% />
+									<h4>2013-10-26</h4>
+									<iframe width=100% height=80% src="https://youtube.com/embed/meT-kdgiGAo" frameborder="0" allowfullscreen class="video"></iframe>
+									<img src="../images/ellerman/IBIS_overview2.png" alt="Data overview for 2013-10-26" width=100% />
+									<h4>2014-10-26</h4>
+									<iframe width=100% height=80% src="https://youtube.com/embed/zo6Xl75_AZQ" frameborder="0" allowfullscreen class="video"></iframe>
+									<img src="../images/ellerman/IBIS_overview3.png" alt="Data overview for 2014-10-26" width=100% />
+								</div>
+							</section>
+							<section id="four">
+								<div class="container">
+									<h3>(Preliminary) Results</h3>
+									<p>Listen. I don't want to give away <i>all</i> my secrets. But here's some. What we're looking for are sources with a flare-like behaviour (handled by the extraction algorithm), who have flux peaks that align in time with peaks of HXR intensity. We find this, but what we find beyond that is that:
+									<ul>
+										<li>Individual sources tend to only correlate with short sections of the HXR lightcurve</li>
+										<li>The HXR lightcurve can be recreated from a combination of sources, implying that nonthermal processes are episodic</li>
+										<li>Oscillatory signatures from wavelet transformations match between HXR lightcurves and low-atmospheric burst lightcurves.</li>
+										<li>For Ca II 8542Å, the red wing correlates with HXR bursts better than the blue wing</li>
+									</ul>
+									<p>To demonstrate, these are HXR lightcurves from RHESSI, and the combination of low-atmospheric sources that mirror them.</p>
+									<img src="../images/ellerman/20131017_smallevent_goodbombs.png" alt="2013-10-17 bursts that look like HXR events" width = 90% />
+									<img src="../images/ellerman/20131026_smspikelcs.png" alt="2013-10-26 bursts that look like HXR event" width = 90% />
+									<img src="../images/ellerman/20141026_hessievent_goodbombs2.png" alt="2014-10-26 bursts that look like HXR event" width=90% />
+									<p>And, the event from the middle picture of the above three, with a Morlet wavelet applied. HXR lightcurve first:</p>
+									<img src="../images/ellerman/20131026_smspike_hsi_wavelets.png" alt="2013-10-26 RHESSI wavelets" width = 100% />
+									<p>And now the same event, wavelet analysis carried out on the extracted IBIS source lightcurves:</p>
+									<img src="../images/ellerman/20131026_smspike_rwbursts_wavelets.png" alt="2013-10-26 IBIS wavelets" width=100% />
+									<p>Obviously, there's quite a bit more that I cannot put online just yet. Stay tuned for this page to be updated when the eventual paper is submitted!</p>
+								</div>
+							</section>
+						</div>
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Sean Sellers 2022. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
